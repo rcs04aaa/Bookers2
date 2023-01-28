@@ -18,7 +18,6 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @book = Book.new
     @books = @user.books
-    flash[:notice] = "You have created book successfully."
   end
   
   def update

@@ -36,6 +36,7 @@ class BooksController < ApplicationController
   else
     render :edit
   end
+end
   
   def destroy
     book = Book.find(params[:id])

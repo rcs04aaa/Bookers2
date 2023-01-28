@@ -7,10 +7,10 @@
           
           <h1>Editing Book</h1>
           
-          <% if @list.errors.any? %>
-          <%= @list.errors.count %>errors prohibited this book from being saved:
+          <% if @book.errors.any? %>
+          <%= @book.errors.count %>errors prohibited this book from being saved:
           <ul>
-            <% @list.errors.full_messages.each do |message| %>
+            <% @book.errors.full_messages.each do |message| %>
             <li><%= message %></li>
             <% end %>
           </ul>
