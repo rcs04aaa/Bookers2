@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root :to => 'homes#top'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :users
-  resources :books, only: [:new, :create, :index, :show]
-  get 'homes/about'
+  resources :books
+  get '/homes/about'
 end
