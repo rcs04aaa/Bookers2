@@ -1,7 +1,9 @@
 <!--book詳細-->
-<body>
-  <main>
-    <%= render "layouts/userinfo" %>
+<div class="container px-5 px-sm-0">
+  <div class="row">
+    <div class="col-md-3">
+      <%= render "layouts/userinfo", user: @user, book: @book_new %>
+    </div>
     <div class="col-md-8 offset-md-1">
       <h2>Book detail</h2>
       <table class="table">
@@ -20,5 +22,5 @@
         </tbody>
       </table>
     </div>
-  </main>
-</body>
+  </div>
+</div>
